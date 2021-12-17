@@ -1,3 +1,5 @@
+#How does the features of a sentence influences its popularity ?
+
 ## Introduction
 
 If you say something, odds are you want to be heard. This is even more true if you want to share ideas or opinions. If you believe in something and you want to be sure what you say reaches as many people as it can, then you may want to pay attention to what you say, or rather, how you say it. Should you use a long sentence ? With long words ? Should you use a lot of punctuation ? How could you maximize the reach of your ideas by only tweaking the intrinsic structure of what you say ?
@@ -19,38 +21,23 @@ The only stand-out fact we see is that the hight the number of words in a senten
 ![hist](/graphs/hist1.png)
 ![hist2](/graphs/hist_numWords.png)
 
+Well, let's try modelling !
+
+## Surely the least squares are gonna tell us something interesting!
+
+We want to find how impactful are there features on ones quote popularity, and as such, we runned a few ordinary least squares models on our data.
+
+## Let's try more ! 
+
+Since we couldn't find anything impactful, we tried engineer our features : add interaction terms, log transforms... Despite trying to add complexity, our results stay more or less the same.
+
+## Still nothing, then let's try on more powerful models !
+
+## Well, it seems that even powerful models can't explain our theories... so maybe we're not looking at the right things ?
+
+## Still nothing ! Okay we need to go extreme mode then.
 
 
 You can use the [editor on GitHub](https://github.com/KevinFaustini/pop-sentences/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 
-This is an histogram
-![im1](/graphs/hist1.png)
-
-
-
-
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
