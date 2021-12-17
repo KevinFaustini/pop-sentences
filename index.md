@@ -33,12 +33,20 @@ Since we couldn't find anything impactful, we tried engineering our features : a
 
 ## Still nothing, then let's try on more powerful models !
 
+So even with nonlinear features, we can't explain our data... well perhaps a better model could do so ? This is why stopped using the OLS method and insteand went with XGBoost, which is a very well known and powerful greadient boosting model! This model has been used in many ML contests and is really powerful for classification. However, it's still  pretty useful for regression, we only need to use an another objective function. 
+Well, this model perform only slightly better, its MSE is 0.008 lower. Well, even more complex nonlinear models aren't really useful to our study... We can see which feature seems to contribute more however.
+
+![feature comp](/graphs/xgb_plot_importance_reg.png)
 
 ## Well, it seems that even powerful models can't explain our theories... so maybe we're not looking at the right things ?
 
+Well, if a quote's structure can't explain its popularity, perhaps it's because the speaker popularity overshadow the quote's popularity ? As such, we try to add the speaker's popularity to our analysis, using data from Google Trends. We notice the popularity is highly significant and definitely improves our analysis, however we fail to see any significant breakthrought because our R^2 is still quite low.
+
 ## Still nothing ! Okay we need to go extreme mode then.
 
+Well well well, we tried many different tricks however non of them gave us significant results. Perhaps then it's time to go extreme mode! To try and remove any confounding, we take a unique prolific speaker and analyse his quotations. However even with such an extreme restriction, we don't find anything significant, our variables are not relevant when it comes to the popularity of a quote.
 
-You can use the [editor on GitHub](https://github.com/KevinFaustini/pop-sentences/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Conclusion
 
+Despite our best tries, we couldn't find anything relevant. If we think about it, it kind of makes sense, if there was an easy formula to make what we say popular, it would be long discovered by now! So as stated in different parts of our report, perhaps a more effective study would be focusing on more complex features which would perhaps have a greater effect on ones quote's popularity. We strongly believe one can affect their quote popularity with some clever means, however, none of the straightforward ones we studied work and thus further work mgith reveal itself useful.
 
