@@ -1,5 +1,3 @@
-#How does the features of a sentence influences its popularity ?
-
 ## Introduction
 
 If you say something, odds are you want to be heard. This is even more true if you want to share ideas or opinions. If you believe in something and you want to be sure what you say reaches as many people as it can, then you may want to pay attention to what you say, or rather, how you say it. Should you use a long sentence ? With long words ? Should you use a lot of punctuation ? How could you maximize the reach of your ideas by only tweaking the intrinsic structure of what you say ?
