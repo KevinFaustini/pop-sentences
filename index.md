@@ -25,13 +25,14 @@ Well, let's try modelling !
 
 ## Surely the least squares are gonna tell us something interesting!
 
-We want to find how impactful are there features on ones quote popularity, and as such, we runned a few ordinary least squares models on our data.
+We want to find how impactful are there features on ones quote popularity, and as such, we runned a few ordinary least squares models on our data. First we runned it as it is but we didn't really get good results : about 0.86 for the MSE. So we thought, perhaps if we only focus on popular quotes we could get something... Well, we used the quotes which are cited more than 100 times and we get some significantly better results : the MSE of our model droppesd to 0.382! This is good but still not enough...
 
-## Let's try more ! 
+## So... let's try more ! 
 
-Since we couldn't find anything impactful, we tried engineer our features : add interaction terms, log transforms... Despite trying to add complexity, our results stay more or less the same.
+Since we couldn't find anything impactful, we tried engineering our features : add interaction terms, log transforms... Despite trying to add complexity, our results stay more or less the same. First we tried adding each possible second order interaction term, to see if this would improve our results, But no, our MSE doesn't really improve : 0.380 so an improvement of 0.002. Meh, not very useful ain't it...
 
 ## Still nothing, then let's try on more powerful models !
+
 
 ## Well, it seems that even powerful models can't explain our theories... so maybe we're not looking at the right things ?
 
